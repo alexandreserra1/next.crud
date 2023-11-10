@@ -6,6 +6,17 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  safelist: [
+    {
+      pattern: /^bg-/,
+    },
+    {
+      pattern: /^from-/
+    },
+    {
+      pattern: /^to-/
+    }
+  ],
   theme: {
     extend: {
       backgroundImage: {
